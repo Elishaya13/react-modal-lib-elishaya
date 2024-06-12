@@ -5,3 +5,9 @@ tsconfig.json
 rollup.config.js
 .prietterrc
 .eslintrc.json
+
+# Storybook
+/stories/
+.storybook/
+*.stories.ts
+*.stories.tsx
