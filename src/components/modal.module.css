@@ -20,7 +20,8 @@
     margin: auto;
     padding: 20px;
     border: 1px solid #888;    
-    width: 10rem;
+    width: fit-content;
+    min-width: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,7 +34,10 @@
   .btnClose {     
       font-size: 14px;
       font-weight: bold;     
-      width: 70%;
+      width: fit-content;
+      min-width: 40%;
+      padding-left: 10px;
+      padding-right: 10px;
       border: 1px solid transparent;
       box-sizing: border-box;
   }
