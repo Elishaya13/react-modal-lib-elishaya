@@ -3,11 +3,13 @@
 
 tsconfig.json
 rollup.config.js
-.prietterrc
+.prettierrc
 .eslintrc.json
 
 # Storybook
-/stories/
+src/stories/
 .storybook/
 *.stories.ts
+*.stories.d.ts
 *.stories.tsx
+dist/stories/

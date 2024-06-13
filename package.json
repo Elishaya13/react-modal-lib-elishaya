@@ -1,9 +1,8 @@
 {
   "name": "elishaya-react-modal-lib",
-  "version": "1.0.6",
+  "version": "1.0.13",
   "description": "A modal lib component for React",
   "main": "dist/index.js",
-  "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c",
@@ -22,6 +21,9 @@
     "modal",
     "react",
     "component"
+  ],
+  "files": [
+    "dist"
   ],
   "author": "Elishaya",
   "license": "MIT",
