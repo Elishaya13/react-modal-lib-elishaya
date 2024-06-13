@@ -22,6 +22,7 @@ export const Default: Story = {
     title: 'Modal Title',
     message: 'Modal message here !',
     buttonMsg: 'Button',
+    gapContent: 0,
   },
 };
 

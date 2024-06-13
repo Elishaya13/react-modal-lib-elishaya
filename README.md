@@ -80,6 +80,7 @@ export default App
 | title | string   | Title displayed in the modal header. |
 | message | string | Content message displayed in the body of the modal. |
 | buttonMsg | string | Text displayed on the modal's action button. |
+| gapContent | number | Space between content. |
 | styleIcon | string | Style of the icon displayed in the modal. Possible values are "check", "error", or "none". |
 | iconColor | string | Color of the icon displayed in the modal. |
 | btnTextColor | string | Text color of the modal's action button. |

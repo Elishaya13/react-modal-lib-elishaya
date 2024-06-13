@@ -6,18 +6,20 @@ interface ModalWrapperProps {
   isOpen: boolean;
   onClose: () => void;
     children: React.ReactNode;
-    modalBorderRadius?: string;
+  modalBorderRadius?: string;
+  gapContent?: number;
 }
 
-export const ModalWrapper: React.FC<ModalWrapperProps> = ({ isOpen, onClose, children , modalBorderRadius }) => {
+export const ModalWrapper: React.FC<ModalWrapperProps> = ({ isOpen, onClose, children , modalBorderRadius, gapContent }) => {
     const handleBackgroundClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         if (e.target === e.currentTarget) {
           onClose();
         }
-      };
+    };
+    const gapStyle = gapContent ? `${gapContent}px` : undefined;
   return (
     <div className={`${styles.modal} ${isOpen ? styles.modalShow : ''}`} onClick={handleBackgroundClick} >
-      <div className={styles.modalContent} style={{borderRadius: modalBorderRadius}}>{children}</div>
+      <div className={styles.modalContent} style={{borderRadius: modalBorderRadius, gap: gapStyle}}>{children}</div>
     </div>
   );
 };

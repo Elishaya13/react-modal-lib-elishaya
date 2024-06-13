@@ -50,6 +50,10 @@ interface ModalProps {
    * Modal border radius
    */
   modalBorderRadius?: "0px" | "5px" | "10px" | "15px" | "50px";
+  /**
+   * Gap between content 
+   */
+  gapContent?: number;
 }
 
 /**
@@ -67,10 +71,11 @@ const Modal = ({
   btnTextColor,
   btnBorderRadius = "10px",
   modalBorderRadius = "15px",
+  gapContent=0
 }: ModalProps) => {
   return (
     
-      <ModalWrapper isOpen={isOpen} onClose={onClose} modalBorderRadius={modalBorderRadius}>
+      <ModalWrapper isOpen={isOpen} onClose={onClose} modalBorderRadius={modalBorderRadius} gapContent={gapContent}>
         {styleIcon && <Icon styleIcon={styleIcon} iconColor={iconColor} />}
         {title && <ModalHeader title={title} />}
         <ModalBody message={message} />
