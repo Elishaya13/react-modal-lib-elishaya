@@ -31,7 +31,7 @@ This library has been developed and tested with Node.js version 20. While it sho
     styleIcon='check'
     btnBorderRadius='50px'
     modalBorderRadius='15px'
-    gapContent=10
+    gapContent={10}
 />
 ```
 
@@ -65,7 +65,7 @@ function App() {
         styleIcon='check'
         btnBorderRadius='50px'
         modalBorderRadius='15px'
-        gapContent=10
+        gapContent={10}
       />
     </div>
   )
