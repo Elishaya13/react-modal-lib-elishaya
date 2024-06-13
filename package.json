@@ -1,6 +1,6 @@
 {
   "name": "elishaya-react-modal-lib",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "A modal lib component for React",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
