@@ -13,3 +13,4 @@ src/stories/
 *.stories.d.ts
 *.stories.tsx
 dist/stories/
+storybook-static/

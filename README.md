@@ -103,7 +103,7 @@ export default App
 
 ## Demo
 
-[View Storybook Demo](https://elishaya13.github.io/React_Modal_Component/?path=/docs/component-modal--docs)
+[View Storybook Demo](https://elishaya13.github.io/react-modal-lib-elishaya/?path=/docs/modal--docs)
 
 ## License
 
