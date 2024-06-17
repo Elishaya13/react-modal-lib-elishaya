@@ -2,7 +2,6 @@ import React from 'react';
 import Icon from './Icon';
 import { ModalWrapper, ModalBody, ModalFooter, ModalHeader } from './ModalContent';
 
-
 interface ModalProps {
   /**
    * Should the modal be shown?
@@ -45,23 +44,23 @@ interface ModalProps {
   /**
    * Bouton Border radius
    */
-  btnBorderRadius?: "0px" | "5px" | "10px" | "15px" | "50px";
+  btnBorderRadius?: '0px' | '5px' | '10px' | '15px' | '50px';
   /**
    * Modal border radius
    */
-  modalBorderRadius?: "0px" | "5px" | "10px" | "15px" | "50px";
+  modalBorderRadius?: '0px' | '5px' | '10px' | '15px' | '50px';
   /**
-   * Gap between content 
+   * Gap between content
    */
   gapContent?: number;
 }
 
 /**
- *  UI component for user interaction 
+ *  UI component for user interaction
  */
 const Modal = ({
   isOpen = false,
-  styleIcon ,
+  styleIcon,
   onClose = () => {},
   title,
   message,
@@ -69,19 +68,23 @@ const Modal = ({
   iconColor,
   btnBgColor,
   btnTextColor,
-  btnBorderRadius = "10px",
-  modalBorderRadius = "15px",
-  gapContent=0
+  btnBorderRadius = '10px',
+  modalBorderRadius = '15px',
+  gapContent = 0,
 }: ModalProps) => {
   return (
-    
-      <ModalWrapper isOpen={isOpen} onClose={onClose} modalBorderRadius={modalBorderRadius} gapContent={gapContent}>
-        {styleIcon && <Icon styleIcon={styleIcon} iconColor={iconColor} />}
-        {title && <ModalHeader title={title} />}
-        <ModalBody message={message} />
-      <ModalFooter onClose={onClose} buttonMsg={buttonMsg} btnTextColor={btnTextColor} btnBgColor={btnBgColor} borderRadius={btnBorderRadius} />       
-      </ModalWrapper>
-   
+    <ModalWrapper isOpen={isOpen} onClose={onClose} modalBorderRadius={modalBorderRadius} gapContent={gapContent}>
+      {styleIcon && <Icon styleIcon={styleIcon} iconColor={iconColor} />}
+      {title && <ModalHeader title={title} />}
+      <ModalBody message={message} />
+      <ModalFooter
+        onClose={onClose}
+        buttonMsg={buttonMsg}
+        btnTextColor={btnTextColor}
+        btnBgColor={btnBgColor}
+        borderRadius={btnBorderRadius}
+      />
+    </ModalWrapper>
   );
 };
 

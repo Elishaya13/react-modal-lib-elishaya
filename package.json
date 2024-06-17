@@ -1,6 +1,6 @@
 {
   "name": "elishaya-react-modal-lib",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "A modal lib component for React",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,7 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/Elishaya13/react-modal-lib-elishaya.git"
   },
-  "homepage": "https://elishaya13.github.io/React_Modal_Component/?path=/docs/component-modal--docs",
+  "homepage": "https://elishaya13.github.io/react-modal-lib-elishaya/?path=/docs/modal--docs",
   "keywords": [
     "modal",
     "react",
